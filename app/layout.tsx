@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Grant Protech Solutions",
+  title: "Zvollen Global",
   description: "Empowering Businesses Through Innovative Technology Solutions",
 };
 
