@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background curved shape -->
+  <path d="M50 50 C50 22.4 77.4 0 110 0 H690 C722.6 0 750 22.4 750 50 V550 C750 577.6 722.6 600 690 600 H110 C77.4 600 50 577.6 50 550 V50Z" fill="#F8FAFC"/>
+  
+  <!-- Analytics Dashboard -->
+  <rect x="100" y="100" width="600" height="400" rx="20" fill="white" stroke="#22577E" stroke-width="2"/>
+  
+  <!-- Bar Charts -->
+  <rect x="150" y="200" width="30" height="120" rx="4" fill="#22D3EE"/>
+  <rect x="190" y="180" width="30" height="140" rx="4" fill="#22577E"/>
+  <rect x="230" y="220" width="30" height="100" rx="4" fill="#22D3EE"/>
+  <rect x="270" y="160" width="30" height="160" rx="4" fill="#22577E"/>
+  
+  <!-- Line Graph -->
+  <path d="M350 300 Q400 250 450 270 T550 230 T650 200" stroke="#22577E" stroke-width="3" fill="none"/>
+  
+  <!-- Character 1 - Person in dress -->
+  <path d="M200 350 L200 450 Q200 480 220 480 H240 Q260 480 260 450 L260 350 Z" fill="#22D3EE"/>
+  <circle cx="230" cy="320" r="30" fill="#22D3EE"/>
+  <path d="M215 310 Q230 330 245 310" stroke="#333" stroke-width="2" fill="none"/>
+  <circle cx="220" cy="305" r="3" fill="#333"/>
+  <circle cx="240" cy="305" r="3" fill="#333"/>
+  
+  <!-- Character 2 - Person in suit -->
+  <path d="M500 350 L500 450 Q500 480 520 480 H540 Q560 480 560 450 L560 350 Z" fill="#22577E"/>
+  <circle cx="530" cy="320" r="30" fill="#22577E"/>
+  <path d="M515 310 Q530 330 545 310" stroke="#fff" stroke-width="2" fill="none"/>
+  <circle cx="520" cy="305" r="3" fill="#fff"/>
+  <circle cx="540" cy="305" r="3" fill="#fff"/>
+  
+  <!-- Small Decorative Elements -->
+  <circle cx="120" cy="130" r="6" fill="#22D3EE"/>
+  <circle cx="680" cy="130" r="6" fill="#22577E"/>
+  <circle cx="120" cy="470" r="6" fill="#22577E"/>
+  <circle cx="680" cy="470" r="6" fill="#22D3EE"/>
+</svg> 
