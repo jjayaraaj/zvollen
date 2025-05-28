@@ -2,8 +2,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
-import WhyChooseUs from './components/WhyChooseUs'
-import Testimonials from './Testimonials'
+import ProductsServices from './components/ProductsServices'
 
 export default function Home() {
   return (
@@ -11,8 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <WhyChooseUs />
-      <Testimonials />
+      <ProductsServices />
       <Contact />
     </main>
   )

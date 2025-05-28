@@ -34,12 +34,12 @@ export default function Navbar() {
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             {/* Circular Logo */}
-            <div className="w-12 h-12 bg-gradient-to-br from-[#2A9D8F] to-[#22D3EE] rounded-full flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 bg-gradient-to-br from-[#5B21B6] to-[#2563EB] rounded-full flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-lg">Z</span>
             </div>
             {/* Company Name */}
             <div className="flex flex-col">
-              <span className="text-[#264653] font-bold text-xl lg:text-2xl tracking-tight">
+              <span className="text-[#5B21B6] font-bold text-xl lg:text-2xl tracking-tight">
                 Zvollen Global
               </span>
             </div>
@@ -49,35 +49,35 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-gray-600 hover:text-[#2A9D8F] font-medium transition-all duration-300 relative group"
+              className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               Home
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#2A9D8F] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-gray-600 hover:text-[#2A9D8F] font-medium transition-all duration-300 relative group"
+              className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               About Us
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#2A9D8F] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-gray-600 hover:text-[#2A9D8F] font-medium transition-all duration-300 relative group"
+              className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               Services
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#2A9D8F] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-gray-600 hover:text-[#2A9D8F] font-medium transition-all duration-300 relative group"
+              className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               Contact Us
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#2A9D8F] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             
             {/* CTA Button */}
-            <button className="bg-[#2A9D8F] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#287771] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+            <button className="bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#38BDF8] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
               Get A Quote
             </button>
           </div>
@@ -113,29 +113,29 @@ export default function Navbar() {
           <div className="py-4 space-y-2 border-t border-gray-100 mt-4">
             <button
               onClick={() => scrollToSection('home')}
-              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#2A9D8F] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
+              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#2A9D8F] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
+              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               About Us
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#2A9D8F] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
+              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#2A9D8F] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
+              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               Contact Us
             </button>
-            <button className="w-full mt-4 bg-[#2A9D8F] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#287771] transition-all duration-300 shadow-md">
+            <button className="w-full mt-4 bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#38BDF8] transition-all duration-300 shadow-md">
               Get A Quote
             </button>
           </div>

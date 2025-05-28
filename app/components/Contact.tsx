@@ -26,22 +26,22 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-[#5B21B6] via-[#2563EB] to-[#5EEAD4] relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Side - Contact Info */}
           <div className="space-y-8">
             {/* Header */}
             <div className="space-y-4">
-              <p className="text-[#2A9D8F] font-medium text-sm tracking-wider uppercase">
+              <p className="text-[#5EEAD4] font-medium text-sm tracking-wider uppercase">
                 GET IN TOUCH
               </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#264653] leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Let&apos;s Talk About
                 <br />
-                <span className="text-[#2A9D8F]">Your Project</span>
+                <span className="text-[#5EEAD4]">Your Project</span>
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+              <p className="text-white/80 text-lg leading-relaxed max-w-md">
                 Get in Touch for Expert Digital Solutions and Take Your Business 
                 to the Next Level.
               </p>
@@ -51,7 +51,7 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Phone */}
               <div className="flex items-center space-x-4">
-                <div className="w-14 h-14 bg-[#2A9D8F] rounded-full flex items-center justify-center shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#38BDF8] to-[#5EEAD4] rounded-full flex items-center justify-center shadow-lg">
                   <svg 
                     className="w-6 h-6 text-white" 
                     fill="none" 
@@ -67,14 +67,14 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-[#2A9D8F] font-semibold text-lg">Phone:</h3>
-                  <p className="text-gray-600 text-lg">800-961-4656</p>
+                  <h3 className="text-[#5EEAD4] font-semibold text-lg">Phone:</h3>
+                  <p className="text-white/80 text-lg">800-961-4656</p>
                 </div>
               </div>
 
               {/* Email */}
               <div className="flex items-center space-x-4">
-                <div className="w-14 h-14 bg-[#2A9D8F] rounded-full flex items-center justify-center shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#38BDF8] to-[#5EEAD4] rounded-full flex items-center justify-center shadow-lg">
                   <svg 
                     className="w-6 h-6 text-white" 
                     fill="none" 
@@ -90,15 +90,15 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-[#2A9D8F] font-semibold text-lg">Email:</h3>
-                  <p className="text-gray-600 text-lg">info@grantprotechsolutions.com</p>
+                  <h3 className="text-[#5EEAD4] font-semibold text-lg">Email:</h3>
+                  <p className="text-white/80 text-lg">info@zvollenglobalsolutions.com</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Fields */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -109,7 +109,7 @@ export default function Contact() {
                     placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#2A9D8F] focus:border-transparent transition duration-300 placeholder-gray-400"
+                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#5B21B6] focus:border-transparent transition duration-300 placeholder-gray-400"
                     required
                   />
                 </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                     placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#2A9D8F] focus:border-transparent transition duration-300 placeholder-gray-400"
+                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#5B21B6] focus:border-transparent transition duration-300 placeholder-gray-400"
                     required
                   />
                 </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#2A9D8F] focus:border-transparent transition duration-300 placeholder-gray-400"
+                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#5B21B6] focus:border-transparent transition duration-300 placeholder-gray-400"
                     required
                   />
                 </div>
@@ -145,7 +145,7 @@ export default function Contact() {
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#2A9D8F] focus:border-transparent transition duration-300 appearance-none bg-white text-gray-700"
+                      className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#5B21B6] focus:border-transparent transition duration-300 appearance-none bg-white text-gray-700"
                     >
                       <option value="Social Media Marketing">Social Media Marketing</option>
                       <option value="SEO Services">SEO Services</option>
@@ -171,7 +171,7 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#2A9D8F] focus:border-transparent transition duration-300 placeholder-gray-400 resize-none"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#5B21B6] focus:border-transparent transition duration-300 placeholder-gray-400 resize-none"
                   required
                 ></textarea>
               </div>
@@ -179,7 +179,7 @@ export default function Contact() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#2A9D8F] text-white py-4 px-8 rounded-lg font-semibold text-lg hover:bg-[#287771] transform hover:scale-[1.02] transition duration-300 shadow-lg hover:shadow-xl"
+                className="w-full bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white py-4 px-8 rounded-lg font-semibold text-lg hover:from-[#2563EB] hover:to-[#38BDF8] transform hover:scale-[1.02] transition duration-300 shadow-lg hover:shadow-xl"
               >
                 Send
               </button>
@@ -187,6 +187,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Background Glow Effects */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-[#38BDF8] to-[#5EEAD4] rounded-full opacity-10 blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-[#5B21B6] to-[#2563EB] rounded-full opacity-10 blur-3xl"></div>
     </section>
   )
 }

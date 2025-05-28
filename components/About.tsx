@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden" id="about">
       {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full opacity-50 -translate-x-16 -translate-y-16"></div>
+      <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-teal-50 to-teal-200 rounded-full opacity-50 -translate-x-16 -translate-y-16"></div>
       <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-50 translate-x-12 translate-y-12"></div>
       
       <div className="container mx-auto px-4 relative z-10">
