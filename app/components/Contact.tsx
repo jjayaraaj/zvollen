@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-[#5EEAD4] font-semibold text-lg">Email:</h3>
-                  <p className="text-white/80 text-lg">info@zvollenglobalsolutions.com</p>
+                  <p className="text-white/80 text-lg">info@zvollenglobaltrade.com</p>
                 </div>
               </div>
             </div>

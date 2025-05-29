@@ -17,21 +17,24 @@ const Hero = () => {
           <div className="space-y-8 lg:pr-8">
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-[#5B21B6] via-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent block">
-                  Driving Digital
+                Why trade local 
                 </span>
-                <span className="text-gray-800 block">Success,</span>
-                <span className="text-gray-800 block">Maximizing</span>
+                <span className="text-gray-800 block">When you can go,</span>
+                
                 <span className="bg-gradient-to-r from-[#2563EB] via-[#38BDF8] to-[#5EEAD4] bg-clip-text text-transparent block">
-                  Growth
+                Global
                 </span>
               </h1>
             </div>
             
             {/* Description */}
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-xl">
-              We specialize in SEO, PPC, and digital marketing to boost your online presence and achieve top search rankings.
+            We specialize in trading all over the globe
+in oil &amp; gas industry and also provide IT services to
+businesses to achieve high success through digital marketing and
+SEO
             </p>
             
             {/* CTA Buttons */}
