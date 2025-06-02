@@ -68,7 +68,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-[#5EEAD4] font-semibold text-lg">Phone:</h3>
-                  <p className="text-white/80 text-lg">800-961-4656</p>
+                  <p className="text-white/80 text-lg">+60-174050516</p>
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-[#5EEAD4] font-semibold text-lg">Email:</h3>
-                  <p className="text-white/80 text-lg">info@zvollenglobaltrade.com</p>
+                  <p className="text-white/80 text-lg">info@zvollen.com</p>
                 </div>
               </div>
             </div>

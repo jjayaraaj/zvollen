@@ -90,7 +90,7 @@ SEO
                       <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                       <div className="flex-1 bg-gray-100 rounded-lg mx-4 h-8 flex items-center px-3">
                         <div className="w-4 h-4 bg-gray-300 rounded mr-2"></div>
-                        <div className="text-xs text-gray-400">www.zvollenglobalsolutions.com</div>
+                        <div className="text-xs text-gray-400">www.zvollen.com</div>
                       </div>
                     </div>
                     
