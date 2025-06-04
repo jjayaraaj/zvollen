@@ -1,10 +1,13 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   // Handle scroll effect
   useEffect(() => {
@@ -15,12 +18,20 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (sectionId: string) => {
+  const handleNavigation = (sectionId: string) => {
+    setIsOpen(false)
+    
+    // If we're not on the home page, navigate to home first
+    if (pathname !== '/') {
+      router.push(`/#${sectionId}`)
+      return
+    }
+
+    // If we're already on the home page, scroll to the section
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
-    setIsOpen(false)
   }
 
   return (
@@ -32,7 +43,10 @@ export default function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
-          <div className="flex items-center space-x-3">
+          <div 
+            className="flex items-center space-x-3 cursor-pointer"
+            onClick={() => router.push('/')}
+          >
             {/* Circular Logo */}
             <div className="w-12 h-12 bg-gradient-to-br from-[#5B21B6] to-[#2563EB] rounded-full flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-lg">Z</span>
@@ -48,28 +62,28 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('home')}
+              onClick={() => handleNavigation('home')}
               className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => handleNavigation('about')}
               className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               About Us
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => handleNavigation('services')}
               className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               Services
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#5B21B6] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('contact')}
               className="text-gray-600 hover:text-[#5B21B6] font-medium transition-all duration-300 relative group"
             >
               Contact Us
@@ -77,7 +91,10 @@ export default function Navbar() {
             </button>
             
             {/* CTA Button */}
-            <button className="bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#38BDF8] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+            <button 
+              onClick={() => handleNavigation('contact')}
+              className="bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#38BDF8] transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+            >
               Get A Quote
             </button>
           </div>
@@ -112,30 +129,33 @@ export default function Navbar() {
         }`}>
           <div className="py-4 space-y-2 border-t border-gray-100 mt-4">
             <button
-              onClick={() => scrollToSection('home')}
+              onClick={() => handleNavigation('home')}
               className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               Home
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => handleNavigation('about')}
               className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               About Us
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => handleNavigation('services')}
               className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               Services
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('contact')}
               className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[#5B21B6] hover:bg-gray-50 rounded-lg transition-all duration-300 font-medium"
             >
               Contact Us
             </button>
-            <button className="w-full mt-4 bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#38BDF8] transition-all duration-300 shadow-md">
+            <button 
+              onClick={() => handleNavigation('contact')}
+              className="w-full mt-4 bg-gradient-to-r from-[#5B21B6] to-[#2563EB] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#38BDF8] transition-all duration-300 shadow-md"
+            >
               Get A Quote
             </button>
           </div>

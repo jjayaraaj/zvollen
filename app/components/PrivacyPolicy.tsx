@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#5B21B6]">6. Changes to This Policy</h2>
             <p className="text-gray-600 leading-relaxed">
-              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "last updated" date.
+              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;last updated&quot; date.
             </p>
           </section>
 
@@ -75,7 +75,6 @@ const PrivacyPolicy = () => {
             </p>
             <div className="bg-gradient-to-r from-[#5B21B6]/10 to-[#2563EB]/10 p-4 rounded-lg">
               <p className="text-gray-700">Email: privacy@zvollen.com</p>
-           
             </div>
           </section>
         </div>

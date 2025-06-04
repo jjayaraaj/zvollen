@@ -1,5 +1,14 @@
 import TermsConditions from '../components/TermsConditions';
 
+export const metadata = {
+  title: 'Terms & Conditions - ZVOLLEN',
+  description: 'Terms and Conditions for using ZVOLLEN services',
+};
+
 export default function TermsConditionsPage() {
-  return <TermsConditions />;
+  return (
+    <main className="min-h-screen">
+      <TermsConditions />
+    </main>
+  );
 } 
